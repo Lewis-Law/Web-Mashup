@@ -1,0 +1,18 @@
+<div class="aboutContainer">
+    <div class="aboutImage"><figure><img src="{{info.0.source}}" height="200" width="200"></div>
+    <div class="aboutInfo">
+    <p class="aboutLabel">Name: </p><p>{{info.0.name}}</p></br>
+    <p class="aboutLabel">Gender: </p><p>{{info.0.gender}}</p></br>
+    <p class="aboutLabel">Email: </p><p>{{info.0.email}}</p></br>
+    <p class="aboutLabel">Total No. of Friends: </p><p>{{info.0.friends}}</p>
+    </figure>
+    </div>
+</div>
+
+<h1>Posts:</h1>
+{{#each posts}}
+    <div class="aboutPost">
+        <p>{{this.name}}</p>
+        <p>Message: {{this.message}}</p>
+    </div>
+{{/each}}    

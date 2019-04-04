@@ -1,0 +1,4 @@
+<div id="searchContainer"><h1>Searched: {{search}}</h1></div>
+{{#each photos}}
+    <figure data-full="{{this.full}}" data-title="{{this.title}}"><img src="{{this.file}}" alt="{{this.title}}" height="200" width="200"><figcaption>{{this.title}}</figcaption></figure>
+{{/each}}    
